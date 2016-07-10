@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dlujanapps.mx.wary.fragments.FriendsFragment"
+    android:id="@+id/coordinatorLayout"
+    android:theme="@style/WaryTheme"
+    android:layout_marginTop="?actionBarSize"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshlayout_friends"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/friends_grid"
+            android:nextFocusDown="@+id/friends_fragment_fab"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/friends_emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:contentDescription="@string/friends_empty_cd"
+        >
+        <TextView
+            android:id="@+id/no_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_empty_summary"
+            />
+        <Button
+            android:id="@+id/empty_view_friends_add_friends_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_friends"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_add_friends"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/friends_fragment_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:transitionName="@string/start_to_friends_transition"
+        android:tint="@color/white"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="@string/button_add_friend_cd"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

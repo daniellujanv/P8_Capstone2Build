@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="300dp"
+        android:contentDescription="@string/title_adding_friend"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/addfriend_friendname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:hint="@string/new_friend_name"
+                android:contentDescription="@string/new_friend_name_cd" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/addfriend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:text="@string/done"
+            android:layout_marginEnd="@dimen/activity_horizontal_centered_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorPrimaryDark"
+            style="?attr/borderlessButtonStyle"
+            android:contentDescription="@string/button_add_friend_cd"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/addfriend_progressbar_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundDarkTransparent"
+        android:clickable="true"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            style="@android:style/Widget.Holo.ProgressBar.Large"
+            />
+    </FrameLayout>
+</FrameLayout>

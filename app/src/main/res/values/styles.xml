@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="WaryTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceListItem">@style/MyListItemTextAppearance</item>
+
+        <item name="android:textColor">@color/colorPrimaryExtraDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryExtraDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryLight</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+
+    </style>
+
+    <style name="WaryTheme.BrandedLaunch" parent="WaryTheme">
+        <item name="android:windowBackground">@drawable/branded_logo</item>
+    </style>
+
+
+    <style name="WaryTheme.ActionBar" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceListItem">@style/MyListItemTextAppearance</item>
+
+        <item name="android:textColor">@color/colorPrimaryExtraDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/greyText</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+
+        <!--<item name="android:colorBackground">@color/md_cyan_50</item>-->
+        <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+
+    </style>
+
+    <style name="WaryTheme.Dialog" parent="WaryTheme">
+        <item name="android:textAppearanceLarge">@style/WaryTheme.Dialog.TitleTextAppearance</item>
+    </style>
+
+    <style name="WaryTheme.Dialog.TitleTextAppearance" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- style the items within the overflow menu -->
+    <style name="MyDropDownListView" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">@color/colorPrimaryLight</item>
+
+        <item name="android:textAppearanceListItem">@style/MyListItemTextAppearance</item>
+        <item name="android:itemTextAppearance">@style/MyListItemTextAppearance</item>
+
+        
+        <item name="android:textColor">@color/colorPrimaryExtraDark</item>
+        <item name="titleTextColor">@color/colorPrimaryExtraDark</item>
+
+    </style>
+
+    <style name="MyTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="NavDrawerTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="MyListItemTextAppearance" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorPrimaryExtraDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+    </style>
+
+    <style name="CenterTextVertically">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_centered_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_centered_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_overlay</item>
+    </style>
+
+</resources>

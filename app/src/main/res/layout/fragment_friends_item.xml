@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:id="@+id/friends_item_wrapper"
+    android:padding="@dimen/fab_margin"
+    >
+    <ImageView
+        android:id="@+id/friends_item_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_more"
+        android:tint="@color/colorAccent"
+        android:contentDescription="@string/friend_detail_cd"
+        android:nextFocusDown="@+id/friends_item_name"
+        />
+    <TextView
+        android:id="@+id/friends_item_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Hello World!"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/MyListItemTextAppearance"
+        android:layout_weight="9"
+        android:nextFocusDown="@+id/friends_item_status"
+        />
+    <TextView
+        android:id="@+id/friends_item_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/friend_offline"
+        />
+</LinearLayout>

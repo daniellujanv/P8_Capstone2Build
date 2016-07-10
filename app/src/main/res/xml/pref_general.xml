@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_discover"
+        android:summary="@string/pref_description_discovery_mode"
+        android:textAppearance="@style/MyListItemTextAppearance"
+        android:title="@string/pref_title_discovery_mode" />
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!--<ListPreference-->
+        <!--android:defaultValue="0"-->
+        <!--android:entries="@array/pref_auto_off_list_titles"-->
+        <!--android:entryValues="@array/pref_auto_off_list_values"-->
+        <!--android:key="@string/pref_key_auto_off"-->
+        <!--android:textAppearance="@style/MyListItemTextAppearance"-->
+        <!--android:title="@string/pref_title_auto_off"-->
+        <!--android:summary="@string/pref_description_auto_off"-->
+        <!--/>-->
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="@string/pref_key_display_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/MyListItemTextAppearance"
+        android:title="@string/pref_title_display_name"
+        />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+
+
+</PreferenceScreen>

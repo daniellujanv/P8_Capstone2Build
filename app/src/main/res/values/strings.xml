@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">WARY</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_title_friends">Friends</string>
+    <string name="menu_title_history">History</string>
+    <string name="menu_title_settings">Settings</string>
+    <string name="menu_title_helpfeedback"><![CDATA[Help & Feedback]]></string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="pref_header_general">General</string>
+
+    <string-array name="pref_auto_off_list_titles">
+        <item>Never</item>
+        <item>After 1 hour</item>
+        <item>After 2 hours</item>
+        <item>After 3 hours</item>
+    </string-array>
+    <string-array name="pref_auto_off_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- pref keys -->
+    <string name="pref_key_discover">discover</string>
+    <string name="pref_key_wifip2p_enabled">WifiP2p Enabled</string>
+    <string name="pref_key_auto_off">auto_off_list</string>
+    <string name="pref_key_display_name">wifi_name</string>
+    <string name="pref_key_my_wifip2p_address">wifi_p2p_name</string>
+    <!-- pref headers -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_header_notifications">Notifications</string>
+    <!-- pref titles -->
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_discovery_mode">Discovery Mode</string>
+    <string name="pref_title_auto_off">Auto Off</string>
+    <!-- pref -->
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_default_bluetooth_name">Device name</string>
+    <string name="pref_description_discovery_mode">In Discovery Mode your nearby friends can find you</string>
+    <string name="pref_description_auto_off">Automatically turn off Discovery Mode to save battery life</string>
+
+    <string name="title_activity_result">ResultActivity</string>
+
+    <string name="start_discovery">Discover</string>
+    <string name="action_stop_discovery">Stop Discovery</string>
+
+    <string name="action_filter_list">Filter List</string>
+    <string name="search_hint">Insert friend\'s name…</string>
+    <string name="title_add_friends">Add Friends</string>
+    <string name="title_finding_friend">Finding Friend</string>
+
+    <string name="discover_message_cd">When you start discovering, you also become visible to your friends… Click here to start discovering!</string>
+    <string name="discover_message">When you start discovering, you also become visible to your friends</string>
+    <string name="disconnect_string">Disconnect</string>
+    <!--
+     ACCOUNTS & DATA
+     -->
+    <string name="account_type">dummy.wary</string>
+    <string name="authority">dlujanapps.mx.wary.provider</string>
+    <string name="dialog_message">We need WiFi!!!!! Click OK to enable!</string>
+    <string name="wifi_dialog_title">WIFI NOM NOM NOM!</string>
+    <string name="ok">OK</string>
+    <string name="no">I DONT TRUST YOU</string>
+    <string name="no_wifip2p">Network not enabled… please Turn on Wifi!</string>
+    <string name="new_friend_name">Friend Name…</string>
+    <string name="done">Done!</string>
+
+    <string name="ACTION_STOP_DISCOVER_PEERS">wary.action.stop_discovery</string>
+    <string name="ACTION_ALARM_DISCOVER_PEERS">wary.action.discover_peers</string>
+    <string name="ACTION_CONNECT">wary.action.connect</string>
+    <string name="ACTION_DISCONNECT">wary.action.disconnect</string>
+
+    <string name="connecting_to_message">Connecting to %1$s</string>
+    <string name="start_to_friends_transition">start_to_friends</string>
+    <string name="menu_item_detail">Detail</string>
+    <string name="menu_item_disconnect">Disconnect</string>
+    <string name="menu_item_delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_delete_friend_message">Are you sure you want to delete %1$s?</string>
+    <string name="dialog_delete_friend_title">Delete Friend</string>
+    <string name="pref_summary_display_name_null">Change your display name here!</string>
+    <string name="save">Save!</string>
+
+    <string name="change_wifi_display_name_dialog_title">Set your Display Name!</string>
+    <string name="change_wifi_display_name_dialog_message">This is the name others will see when they find you!
+    </string>
+    <string name="re_enter_name">Please enter a valid name</string>
+    <string name="name_required_to_discover">A name is required to start discovering friends!</string>
+    <string name="history_empty_summary">No items here! Start by adding some Friends!</string>
+    <string name="friends_empty_summary">Start by adding some friends!</string>
+    <string name="friend_offline">Offline</string>
+    <string name="friend_connected">Connected</string>
+    <string name="friend_online">Online</string>
+    <string name="error_deleting_friend">Error deleting friend</string>
+    <string name="friend_deleted">Friend Deleted</string>
+    <string name="undo">Undo</string>
+    <string name="title_adding_friend">Adding friend…</string>
+    <string name="retrieving_location">Retrieving your location</string>
+    <string name="friend_location_unavailable">Friend\'s Location unavailable…</string>
+    <string name="retrieving_friend_location">Waiting for  %1$s location</string>
+    <string name="location_orientation">%1$s mts \n %2$s</string>
+    <string name="connection_status_error">Error receiving connection status</string>
+    <string name="connection_lost">Connection lost/dropped</string>
+    <string name="not_enough_sensors">Not enough sensors to \n point towards friend…</string>
+
+    <string name="friend_detail_name">Name: %1$s</string>
+    <string name="friend_name_changed">%1$s changed to %2$s</string>
+    <string name="unable_update_friend">Unable to update Friend…</string>
+    <string name="location_permission_needed">WARY needs the location of your device to help find your friends!</string>
+    <string name="detail_dialog_title">Detail</string>
+    <string name="click_to_discover_tutorial">Click here to start \n looking for your friends!</string>
+    <string name="nexus_5_tutorial">Nexus 5</string>
+    <string name="friends_tutorial">Here you click to \n find your friend!!</string>
+    <string name="dave_tutorial">Dave</string>
+    <string name="linda_tutorial">Linda</string>
+    <string name="jennifer_tutorial">jennifer</string>
+    <string name="orientation_tutorial">Once connected \n this arrow will point towards your friend</string>
+    <string name="welcome">Welcome!!!</string>
+    <string name="back">Back</string>
+    <string name="one_to_two_tutorial">one_to_two</string>
+    <string name="one_of_three">Step one of three</string>
+    <string name="friends_grid">List of friends</string>
+    <string name="friend_line_t2">Each row represents one friend</string>
+    <string name="friend_detail_cd">Friend detail</string>
+    <string name="friend_more_t2">Friend detail</string>
+    <string name="friend_name_t2">Friend name</string>
+    <string name="friend_status_t2">Friend\'s status</string>
+    <string name="friend_click_t2">Click on the friend you want to find</string>
+    <string name="two_of_three">Step two of three</string>
+    <string name="three_of_three">Final step!</string>
+    <string name="arrow_t2">When connected, the arrow points towards your friend!</string>
+    <string name="connecting_with_friend">Connecting with friend</string>
+    <string name="friends_empty_cd">No friends yet. Add some friends.</string>
+    <string name="history_cd">Here you can see your searches and stuff</string>
+    <string name="start_fragment_cd">Currently not in discovery mode.</string>
+    <string name="button_add_friend_cd">Click here to add friend!</string>
+    <string name="new_friend_name_cd">Insert new friend\'s name</string>
+    <string name="found_notification">You\'ve been found!</string>
+    <string name="who_found_notification">%1$s found you!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_locator"
+    tools:context=".finder.Location.LocatorActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/location_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/content_locator_pointer"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp"
+            android:src="@drawable/pointer"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/not_enough_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_gravity="center"
+        android:text="@string/not_enough_sensors"
+        android:visibility="gone"
+        android:textColor="@color/greyText"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/connecting_overlay"
+        android:background="@color/backgroundDarkTransparent"
+        >
+        <TextView
+            android:id="@+id/connection_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title.Inverse"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_above="@+id/progress_bar_locator"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_locator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/connecting_with_friend"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
+

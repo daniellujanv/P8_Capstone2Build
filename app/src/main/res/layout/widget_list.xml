@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCyan"
+    android:padding="@dimen/widget_margin"
+    >
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="@dimen/one_dp"
+        android:divider="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/widget_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/friends_empty_cd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+</FrameLayout>

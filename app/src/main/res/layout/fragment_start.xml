@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dlujanapps.mx.wary.fragments.StartFragment"
+    android:id="@+id/start_fragment"
+    android:theme="@style/WaryTheme"
+    android:layout_marginTop="?actionBarSize"
+    android:contentDescription="@string/start_fragment_cd"
+    >
+    <Button
+        android:id="@+id/button_start_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:elevation="4dp"
+        android:text="@string/start_discovery"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/start_to_friends_transition"
+        android:contentDescription="@string/discover_message_cd"
+        />
+    <TextView
+        android:id="@+id/discover_message"
+        style="@style/CenterTextVertically"
+        android:layout_below="@id/button_start_fragment"
+        android:text="@string/discover_message"
+        />
+</RelativeLayout>

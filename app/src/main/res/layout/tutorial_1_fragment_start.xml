@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDarkTransparent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/welcome_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:text="@string/welcome"
+        android:layout_margin="@dimen/eight_dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:nextFocusDown="@+id/description_t1"
+        />
+
+    <TextView
+        android:id="@+id/description_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_to_discover_tutorial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+        android:gravity="center"
+        android:layout_margin="@dimen/eight_dp"
+        android:layout_weight="1"
+        android:nextFocusDown="@+id/button_start_t1"
+        />
+
+    <Button
+        android:id="@+id/button_start_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:text="@string/start_discovery"
+        android:textColor="@color/white"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/discover_button_margin"
+        android:layout_weight="1"
+        android:nextFocusDown="@+id/tutorial_ok_button"
+        />
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/tutorial_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:visibility="invisible"
+            android:text="@string/back"
+            />
+
+        <Button
+            android:id="@+id/tutorial_ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/ok"
+            android:contentDescription="@string/ok"
+            android:nextFocusDown="@+id/steps_t1"
+            />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_extra_margin"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/steps_t1"
+        android:contentDescription="@string/one_of_three"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/circle"
+            android:layout_margin="@dimen/fab_margin"
+            android:focusable="false"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/circle_empty"
+            android:focusable="false"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_empty"
+            android:layout_margin="@dimen/fab_margin"
+            android:focusable="false"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

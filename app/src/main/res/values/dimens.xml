@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_extra_margin">24dp</dimen>
+    <dimen name="second_col_text_margin">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="dialog_margin">64dp</dimen>
+    <dimen name="arrow_margin">72dp</dimen>
+    <dimen name="activity_horizontal_centered_margin">48dp</dimen>
+    <dimen name="discover_button_margin">40dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="widget_list_item_height">42dp</dimen>
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+</resources>

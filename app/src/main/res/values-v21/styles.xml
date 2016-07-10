@@ -1,0 +1,21 @@
+<resources>>
+
+    <style name="WaryTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceListItem">@style/MyListItemTextAppearance</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryExtraDark</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+</resources>
