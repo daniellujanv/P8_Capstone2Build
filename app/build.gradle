@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'wary_signing_config'
+            keyAlias 'wary_singing_config'
             keyPassword 'Cocodrilo14!'
-            storeFile file('/Users/DanielLujanApps/Documents/Desarrollo/signing-config/wary_signing_config.jks')
+            storeFile file('./app/wary_signing_config.jks')
             storePassword 'Cocodrilo14!'
         }
     }
